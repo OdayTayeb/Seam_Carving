@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ImageResize">
+   <children>
+      <TextField fx:id="pathEntered" layoutX="138.0" layoutY="31.0" prefHeight="40.0" prefWidth="324.0" />
+      <Text layoutX="23.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Image Path" textAlignment="CENTER" wrappingWidth="105.609375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="okButton" layoutX="495.0" layoutY="31.0" mnemonicParsing="false" onAction="#okClicked" prefHeight="40.0" prefWidth="61.0" text="OK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="energyButton" disable="true" layoutX="34.0" layoutY="220.0" mnemonicParsing="false" onAction="#energyClicked" prefHeight="40.0" prefWidth="152.0" text="Energy Image" visible="false" />
+      <Button fx:id="originalButton" disable="true" layoutX="34.0" layoutY="121.0" mnemonicParsing="false" onAction="#originalClicked" prefHeight="40.0" prefWidth="152.0" text="Original Image" visible="false" />
+      <Button fx:id="plusVerButton" disable="true" layoutX="34.0" layoutY="315.0" mnemonicParsing="false" onAction="#plusVerClicked" prefHeight="40.0" prefWidth="152.0" text="Image + Vertical Seam" visible="false" />
+      <Button fx:id="minusVerButton" disable="true" layoutX="224.0" layoutY="121.0" mnemonicParsing="false" onAction="#minusVerClicked" prefHeight="40.0" prefWidth="152.0" text="Image - Vertical Seam" visible="false" />
+      <Button fx:id="plusHorButton" disable="true" layoutX="224.0" layoutY="220.0" mnemonicParsing="false" onAction="#plusHorClicked" prefHeight="40.0" prefWidth="152.0" text="Image + Horizental Seam" visible="false" />
+      <Button fx:id="minusHorButton" disable="true" layoutX="224.0" layoutY="315.0" mnemonicParsing="false" onAction="#minusHorClicked" prefHeight="40.0" prefWidth="152.0" text="Image - Horizental Seam" visible="false" />
+      <Button fx:id="resizeButton" disable="true" layoutX="412.0" layoutY="121.0" mnemonicParsing="false" onAction="#resizeClicked" prefHeight="40.0" prefWidth="152.0" text="Resize Image" visible="false" />
+      <Button fx:id="resizeHeight" disable="true" layoutX="412.0" layoutY="220.0" mnemonicParsing="false" onAction="#resizeHeightClicked" prefHeight="40.0" prefWidth="152.0" text="Resize Image Height" visible="false" />
+      <Button fx:id="resizeWidth" disable="true" layoutX="412.0" layoutY="315.0" mnemonicParsing="false" onAction="#resizeWidthClicked" prefHeight="40.0" prefWidth="152.0" text="Resize Image Width" visible="false" />
+      <Text fx:id="stateText" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="600.0000088013476" />
+      <TextField fx:id="resizeNum" alignment="CENTER" disable="true" layoutX="412.0" layoutY="86.0" prefHeight="25.0" prefWidth="152.0" promptText="number of deleted seams" visible="false" />
+      <TextField fx:id="resizeHeightNum" alignment="CENTER" disable="true" layoutX="412.0" layoutY="181.0" prefHeight="25.0" prefWidth="152.0" promptText="new Hight" visible="false" />
+      <TextField fx:id="resizeWidthNum" alignment="CENTER" disable="true" layoutX="412.0" layoutY="279.0" prefHeight="25.0" prefWidth="152.0" promptText="new Width" visible="false" />
+   </children>
+</Pane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane minHeight="660.0" minWidth="990.0" prefHeight="486.0" prefWidth="755.0">
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="1000.0" layoutX="-4.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background.jpg" />
+               </image>
+            </ImageView>
+            <Button id="Image" fx:id="ImageResize" layoutX="380.0" layoutY="190.0" mnemonicParsing="false" onAction="#ImageClicked" prefHeight="75.0" prefWidth="230.0" style="-fx-background-color: green; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 5;" text="Image Resize" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="Text" fx:id="TextCompress" layoutX="381.0" layoutY="404.0" mnemonicParsing="false" onAction="#TextClicked" prefHeight="75.0" prefWidth="230.0" style="-fx-background-color: green; -fx-border-color: white; -fx-border-radius: 5; -fx-border-width: 5;" text="Text Compress" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
