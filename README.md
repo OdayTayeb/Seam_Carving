@@ -4,4 +4,4 @@ an implementation for the seam carving algorithm which is an algorithm for conte
 
 the implementation only includes the downsizing.
 
-also the project include a text compression utility.
+the project also includes a text compression utility.
